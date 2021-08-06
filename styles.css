@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+}
+header {
+    background-color: #FFF;
+    background-image: url("nature.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color:#FFF;   
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 0.2em;
+}
+
+header p {
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: oblique;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 6em 0;
+}
+
+@media(min-width:40em){
+    section{
+    flex-direction: row;
+    }
+    div {
+        border-left: 1px solid #1E6F5C; 
+    }
+    div:first-child {
+        border-left: none;
+    }
+    footer div{
+        flex-basis: 50%;
+    }
+}
+
+
+section h2 {
+    color: #1E6F5C;
+    font-size: 2rem;
+}
+
+section div {
+    width: 30%;
+    text-align: center;
+}
+
+footer {
+    background-color: #3A6351;
+    background-size: cover;
+    display: flex;
+    color: #FFF;
+    height: 50vh;  
+    justify-content: flex-end;  
+    padding: 3em 0;  
+}
+
+
+footer h2 {
+    font-size: 3rem;
+}
+
+footer p {
+    line-height: 1.5;
+    margin-bottom: 3em;
+}
+
+button {
+    padding: 0.5em 1.5em;
+    color: #3A6351;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 3em;
+}
+
+button:hover {
+    color:#FFF;
+    background-color: #CEE5D0;
+}
+
